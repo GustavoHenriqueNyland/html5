@@ -1,0 +1,12 @@
+{
+  "name": "inventario-ferramentas",
+  "version": "1.0.0",
+  "description": "Lista detalhada das ferramentas especificas",
+  "main": "./assets/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Henrique Nyland",
+  "license": "ISC",
+  "type": "module"
+}

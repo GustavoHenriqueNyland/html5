@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+}
+
+/*----------------------------------------------------------------------------------*/
+/*                  Estilização do cabeçalho                                        */
+/*----------------------------------------------------------------------------------*/
+header {
+  background-color: #3642f3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: #fff;
+  border-bottom: 2px solid #062ba7;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+
+header h1{
+  font-size: clamp(1em, 1.5em + 1vw, 3em);
+}
+/*FIM Estilização cabeçalho*/
+
+/*----------------------------------------------------------------------------------*/
+/*                  Estilização do campo que mostra a QT de ferramentas da lista    */
+/*----------------------------------------------------------------------------------*/
+#qtFerramentas{
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+#qtFerramentas h2{
+font-size: 18px;
+}
+
+#valorQtFerramentas{
+  margin-left: 10px;
+}
+/*FIM Estilização do campo que mostra a QT de ferramentas da lista -----------------*/
+
+
+/* Lista de ferramentas */
+.container {
+ 
+  background-color: #3671ff;
+  min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+
+/*----------------------------------------------------------------------------------*/
+/*                  Estilização do campo de pesquisa                                */
+/*----------------------------------------------------------------------------------*/
+#pesquisa{
+  width: 200px;
+}
+
+#entradaPesquisa {
+  padding: 10px;
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff;
+  background-color: #3642f3;
+  color: #fff;
+}
+
+#entradaPesquisa::placeholder{
+  color: #fff;
+}
+
+#entradaPesquisa:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+/*FIM Estilização do campo de pesquisa ---------------------------------------------*/
+
+
+/*Negritar as fontes ---------------------------------------------------------------*/
+.bold {
+  font-weight: bold;
+}
+
+
+/* Rodapé --------------------------------------------------------------------------*/
+footer {
+  background-color: #086dcc;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
+  position: fixed;
+  bottom:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ferramentas {
+  padding: 10px;
+  width: 25%;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 10px;
+  transform: scale(0.98);
+  background-color: dodgerblue;
+  border: solid 2px #062ba7;
+  border-radius: 10px;
+  /* cursor: pointer; */
+  color: #fff;
+  font-size: 25px;
+}
+
+.ferramentas-image img {
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+.ferramentas:hover {
+  transform: scale(1);
+}
+
+.ferramentas .ferramentas-button {
+  margin-top: 5px;
+  width: 100%;
+  height: 30px;
+  background-color: #3671ff;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 8px;
+  
+}
+
+#no-ferramentas {
+  width: 100%;
+  background-color: #062ba7;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.ferramentas a {
+  text-decoration: none;
+}
+
+.ferramentas .ferramentas-button {
+  color: #fff;
+}
+
+.ferramentas .ferramentas-button:hover {
+  text-decoration: none;
+  background-color: #062ba7;
+  color: white;
+}
+
+#listaFerramentas {
+  display: flex;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+
+
+
+
+.lbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.box_info{
+  width: 25vw;
+  min-height: 400px;
+  /* background-color: cornflowerblue; */
+  color: #fff;
+  text-align: center;
+  margin-left: 100px;
+  padding-top: 30px;
+  line-height: 1.8;
+  font-size: 20px;
+}
+
+
+.info_navegar{
+  width: 82vw;
+  height: 50px;
+  display: flex;
+  /* background-color: darksalmon; */
+  justify-content: space-between;
+}
+
+.navegar{
+  /* margin-right: 60px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: gold; */
+  width: 50%;
+}
+
+.navegarFechar{
+  /* margin-right: 60px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: gold; */
+  width: 50%;
+}
+
+.tituloInfo{
+  color: #fff;
+  margin-right: 6vw;
+  font-size: clamp(0.5em, 1em + 1vw, 1.2em);
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.box_img{
+  margin-top: 25px;
+  width: 40vw;
+  height: 50vh;
+  /* background-color: aqua; */
+   /* margin: 20px auto; */
+}
+
+.box_img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box_img img:hover  {
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+
+.btn{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  /* position: absolute; */
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  text-align: center;
+}
+
